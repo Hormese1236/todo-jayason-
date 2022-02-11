@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-// import { Button } from "bootstrap";
+
+import Image from "next/image";
+
 import Togglebutton from "./Togglebutton";
 
 const Title = styled.h2`
@@ -51,9 +53,8 @@ export const TaskList = (props) => {
          
             <strong>Status: </strong> {task.status}
             </p>
-               {/* { task.status="completed"&&<Togglebutton disabled={task.status==='completed'}/>}
-        */}
-      
+               <Togglebutton disabled={task.status!=='completed'}/> 
+        
             <br></br>
          
           <p>

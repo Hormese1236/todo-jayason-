@@ -15,6 +15,7 @@ import styled from "styled-components";
 
 
 
+
 export default function Home() {
   const isAuthenticated = useIsAuthenticated();
   const { instance, accounts, inProgress } = useMsal();
@@ -127,7 +128,9 @@ export default function Home() {
           
         
       </footer> 
+
     </div>
+    
     </div>
   );
 }
