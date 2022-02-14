@@ -3,7 +3,8 @@ import styled from "styled-components";
 
 import Image from "next/image";
 
-import Togglebutton from "./Togglebutton";
+import Togglebutton from "./ToggleSwitch";
+import ToggleSwitch from "./ToggleSwitch";
 
 const Title = styled.h2`
   font-size: 20px;
@@ -53,7 +54,7 @@ export const TaskList = (props) => {
          
             <strong>Status: </strong> {task.status}
             </p>
-               <Togglebutton disabled={task.status!=='completed'}/> 
+                 <ToggleSwitch label="mark as done"  value={task.status}/> 
         
             <br></br>
          

@@ -111,14 +111,14 @@ export default function Home() {
           {isAuthenticated ? (
             <p>Access Token Acquired!</p>
           ) : (
-            <button onClick={RequestAccessToken}>Request Access Token</button>
+            <button onClick={RequestAccessToken} class="btn btn-primary">Request Access Token</button>
           )}
         </p>
         <p>
           {taskData ? (
             <TaskList tasks={taskData} />
           ) : (
-            <button onClick={RequestTaskData}>Get Task List</button>
+            <button onClick={RequestTaskData} class="btn btn-primary" >Get Task List</button>
           )}
         </p>
        </main>

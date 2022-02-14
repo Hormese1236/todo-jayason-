@@ -4,7 +4,7 @@ import { msalConfig } from "../utils/authConfig";
 import "../styles/globals.css";
 import 'bootstrap/dist/css/bootstrap.css';
 import "../styles/Index.css";
-import "../styles/Togglebutton.css";
+import "../styles/Toggleswitch.css";
 
 
 

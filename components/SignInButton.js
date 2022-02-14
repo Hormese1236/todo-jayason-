@@ -11,5 +11,5 @@ export const SignInButton = () => {
     });
   };
 
-  return <button onClick={handleLogin}>Sign in</button>;
+  return <button onClick={handleLogin} class="btn btn-primary">Sign in</button>;
 };
