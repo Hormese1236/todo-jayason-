@@ -54,7 +54,7 @@ export const TaskList = (props) => {
          
             <strong>Status: </strong> {task.status}
             </p>
-                 <ToggleSwitch label="mark as done"  value={task.status}/> 
+                 <ToggleSwitch  Name='newsletter'   value={task.status}/> 
         
             <br></br>
          

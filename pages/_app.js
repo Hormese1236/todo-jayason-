@@ -5,6 +5,7 @@ import "../styles/globals.css";
 import 'bootstrap/dist/css/bootstrap.css';
 import "../styles/Index.css";
 import "../styles/Toggleswitch.css";
+import "../styles/Togglebuttonstyles.css"
 
 
 
