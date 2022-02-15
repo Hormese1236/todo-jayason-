@@ -67,10 +67,10 @@
 /* Custom Color */
 
 .red:checked:after {
-	background: #dc281e;
+background-color: rgb(215, 229, 240);	
 }
 
-.blue:checked:after {
+/* .blue:checked:after {
 	background: #396afc;
 }
 
@@ -80,4 +80,7 @@
 
 .purple:checked:after {
 	background: #f953c6;
+} */
+body{
+    background-color: rgb(215, 229, 240);	
 }

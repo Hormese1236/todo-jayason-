@@ -1,10 +1,14 @@
-import React from "react";
+import React, { Fragment } from "react";
 import styled from "styled-components";
 
 import Image from "next/image";
+import { Container, Row, Col } from "reactstrap";
 
 import Togglebutton from "./ToggleSwitch";
 import ToggleSwitch from "./ToggleSwitch";
+
+import mypic from '../public/mypic.png';
+import Agenda from "./Agenda";
 
 const Title = styled.h2`
   font-size: 20px;
@@ -29,18 +33,28 @@ export const TaskList = (props) => {
 
 
 
-    <>
+    <div>
+   
+    <Container className="wholediv">
+      
+    <Row>
+   
+    
+      
+    <Col>
+    <br></br>
       {tasks.map((task) => (
 
 
 
 
-
-        <Card key={task.id}>
+        <Card key={task.id} className="whole">
+         
           <p>
             <Title>{task.title}</Title>
           </p>
-      
+          
+        
           <p>
             <strong>Importance: </strong> {task.importance}
             </p>
@@ -61,8 +75,34 @@ export const TaskList = (props) => {
           <p>
             <strong>Created DateTime: </strong> {task.createdDateTime}
           </p>
+         
         </Card>
+        
       ))}
-    </>
+  </Col>
+  
+  
+  </Row>
+  <div className="imageContainer">
+  <Image className="img" width="400" height="300" src={mypic} />
+ 
+  </div>
+      </Container>
+      
+    
+     
+      
+        
+       
+      
+     
+    
+     
+   
+    
+   
+      {/* <Agenda/> */}
+      </div>
+       
   );
 };

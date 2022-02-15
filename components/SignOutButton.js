@@ -1,6 +1,7 @@
 import React from "react";
 import { useMsal } from "@azure/msal-react";
 
+
 export const SignOutButton = () => {
   const { instance } = useMsal();
 
@@ -11,4 +12,6 @@ export const SignOutButton = () => {
   };
 
   return <button onClick={handleLogout}class="btn btn-primary">Sign out</button>;
+
+  
 };

@@ -6,6 +6,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 import "../styles/Index.css";
 import "../styles/Toggleswitch.css";
 import "../styles/Togglebuttonstyles.css"
+import Image from "next/image";
+
 
 
 
@@ -16,6 +18,7 @@ function MyApp({ Component, pageProps }) {
     <MsalProvider instance={msalInstance}>
       <Component {...pageProps} />
     </MsalProvider>
+
   );
 }
 
