@@ -2,15 +2,10 @@ import { PublicClientApplication } from "@azure/msal-browser";
 import { MsalProvider } from "@azure/msal-react";
 import { msalConfig } from "../utils/authConfig";
 import "../styles/globals.css";
-import 'bootstrap/dist/css/bootstrap.css';
-import "../styles/Index.css";
-import "../styles/Toggleswitch.css";
-import "../styles/Togglebuttonstyles.css"
-import Image from "next/image";
 
-
-
-
+import { config } from "@fortawesome/fontawesome-svg-core";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+config.autoAddCss = false;
 
 function MyApp({ Component, pageProps }) {
   const msalInstance = new PublicClientApplication(msalConfig);
@@ -18,7 +13,6 @@ function MyApp({ Component, pageProps }) {
     <MsalProvider instance={msalInstance}>
       <Component {...pageProps} />
     </MsalProvider>
-
   );
 }
 

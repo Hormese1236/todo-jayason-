@@ -1,7 +1,7 @@
 import React from "react";
 import { useMsal } from "@azure/msal-react";
-import { loginRequest } from "../utils/authConfig";
-import Agenda from "./Agenda";
+import { loginRequest } from "../../utils/authConfig";
+
 export const SignInButton = () => {
   const { instance } = useMsal();
 
@@ -11,6 +11,5 @@ export const SignInButton = () => {
     });
   };
 
-  return  <button onClick={handleLogin} class="btn btn-primary">Sign in</button>;
- 
+  return <button onClick={handleLogin}>Sign in</button>;
 };
