@@ -7,7 +7,7 @@ import { Container, Row, Col } from "reactstrap";
 import Togglebutton from "./ToggleSwitch";
 import ToggleSwitch from "./ToggleSwitch";
 
-import mypic from '../public/mypic.png';
+import mypic2 from '../public/mypic2.png';
 import Agenda from "./Agenda";
 
 const Title = styled.h2`
@@ -84,7 +84,7 @@ export const TaskList = (props) => {
   
   </Row>
   <div className="imageContainer">
-  <Image className="img" width="400" height="300" src={mypic} />
+  <Image className="img" width="400" height="500" src={mypic2} />
  
   </div>
       </Container>
